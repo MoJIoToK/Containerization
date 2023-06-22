@@ -22,11 +22,11 @@ sudo apt  install lxd-installer
 lxd init
 ```
 После этого в консоли необходимо ответить на пару вопросов, для создания контейнера
+![Cсылка на скриншот с инизализацией](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/Untitled.png)
 
 - Убеждаемся в наличии/отстутствии существующих контейнеров:
 
 ```
-lxd init
 lxc storage list
 lxc network list
 lxc remote list
@@ -61,6 +61,9 @@ lxc-ls -f
 ```
 В консоль выведется столбец `AUTOSTART` и `IPV4` где будет указано 1 в случае работы в режиме автостарта и IP который задавали при инициализации.
 
+Список контейнеров:
+![Cсылка на скриншот со списком контейнеров](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/Autorun.png)
+
 Проверить также можно войдя в него:
 ```
 sudo lxc-attach -n db1
@@ -69,7 +72,18 @@ sudo lxc-attach -n db1
 ```
 free -m
 ```
+Память занимаемая контейнером:
+![Cсылка на скриншот с памятью контейнера](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/memory%202.png)
+
 - Для логирования, запустим контейнер следующей командой:
 ```
 sudo lxc-start -n db1 --logfile log.log
 ```
+Запуск с логированием:
+![Cсылка на скриншот с запуском лога](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/Log1.png)
+
+Содержание файла с логами:
+![Cсылка на скриншот с запуском лога](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/Log.png)
+
+Команды используемые для решения:
+![Cсылка на скриншот с историей команд](https://github.com/MoJIoToK/Containerization/blob/main/S2_HW/pic/History.png)
