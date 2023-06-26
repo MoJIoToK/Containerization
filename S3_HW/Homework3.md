@@ -18,6 +18,9 @@ sudo docker run --name some-myssql -h mysql_test -e MYSQL_ROOT_PASSWORD=1 -d mys
 ```
 sudo docker ps -a
 ```
+
+![Cсылка на скриншот с MySQL](https://github.com/MoJIoToK/Containerization/blob/main/S3_HW/pic/mysql.png)
+
 Видно, что контейнер с параметрами описанными выше создан. 
 - Зайдем в созданный контейнер:
 ```
@@ -36,4 +39,12 @@ sudo docker run --name my-phpmyadmin -h php_admin -d --link some-mysql:db -p 808
 Имя контейнера - `my-phpmyadmin`, hostname - `php_admin`, phpmyadmin связ с БД по ссылке - `some-mysql`, порт - `8081:80`
 Теперь у нас имеется два необходимых контейнера, один с БД, второй с phpmyadmin.
 
+![Cсылка на скриншот с phpmyadmin](https://github.com/MoJIoToK/Containerization/blob/main/S3_HW/pic/docker_php_my_admin.png)
+
 - Результат работы связки двух контейнеров, можно увидеть на скриншотах со странички `phpmyadmin`
+
+![Cсылка на скриншот phpmyadmin](https://github.com/MoJIoToK/Containerization/blob/main/S3_HW/pic/php_my_admin.png)
+
+![Cсылка на скриншот сруктуры БД](https://github.com/MoJIoToK/Containerization/blob/main/S3_HW/pic/BD_structure.png)
+
+![Cсылка на скриншот значений БД](https://github.com/MoJIoToK/Containerization/blob/main/S3_HW/pic/BD_values.png)
