@@ -18,3 +18,9 @@ sudo docker build -t image_task4:latest .
 ```
 sudo docker run image_task4:latest
 ```
+
+![Ссылка на скриншот с содержанием Dockerfile](https://github.com/MoJIoToK/Containerization/blob/main/S4_HW/pic/Dockerfile.png)
+
+![Ссылка на скриншот с содержанием Python file](https://github.com/MoJIoToK/Containerization/blob/main/S4_HW/pic/PythonFile.png)
+
+![Ссылка на скриншот с созданием образа контейнера и его запуск](https://github.com/MoJIoToK/Containerization/blob/main/S4_HW/pic/Built%20%26%20run.png)
