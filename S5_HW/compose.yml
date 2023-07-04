@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mariadb
+    networks:
+      - db-admin
+    environment:
+      - MYSQL_ROOT_PASSWORD=test123
+
+  admin:
+    image: phpmyadmin
+    networks:
+      - db-admin
+    ports:
+      - "8081:80"
+
+networks:
+  db-admin:
