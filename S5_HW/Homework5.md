@@ -36,5 +36,12 @@ sudo docker service create --mode=global --name nginx-global nginx:alpine
 ```
 Таким образом в каждой ноде должно было прибавиться ещё по одному контейнеру
 
+![Ссылка на скриншот с установкой контейнеров из compose файла](https://github.com/MoJIoToK/Containerization/blob/main/S5_HW/pic/1_console.png)
+
+![Ссылка на скриншот с работой nginx](https://github.com/MoJIoToK/Containerization/blob/main/S5_HW/pic/nginx_slave.png)
+
+![Ссылка на скриншот с работой БД и phpmyadmin](https://github.com/MoJIoToK/Containerization/blob/main/S5_HW/pic/1_php.png)
+
+![Ссылка на скриншот с несколькими контейнерами в нодах](https://github.com/MoJIoToK/Containerization/blob/main/S5_HW/pic/final.png)
 
 

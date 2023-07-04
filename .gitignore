@@ -399,3 +399,6 @@ FodyWeavers.xsd
 
 *.doc
 *.docx
+*.py
+Dockerfile
+Ignore
